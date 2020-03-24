@@ -2,7 +2,8 @@
   padding: 0.65rem 2.75rem;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
-  height: 60px;
+  max-height: 60px;
+  margin-bottom: 1px;
   .logo {
     font-family: 'Roboto', sans-serif;
     color: #1875F0;
@@ -32,7 +33,7 @@
         background: none;
         font-size: 0.75rem;
         transition: all 0.125s;
-        border-bottom: 0.5px solid #eaeaea;
+        // border-bottom: 0.5px solid #eaeaea;
       }
     }
     &-links {
@@ -54,13 +55,12 @@
         bottom: 3px;
       }
       span {
-        font-size: 0.625rem;
+        font-size: 0.635rem;
         text-align: center;
         color: #fff;
         background-color: #1860EC;
         border-radius: 50%;
-        width: 14px;
-        height: 15px;
+        padding: 3px 5.5px;
         display: block;
         position: absolute;
         top: 0.05rem;
@@ -75,7 +75,7 @@
       .hello-user {
         text-align: right;
         position: relative;
-        bottom: 0.4rem;
+        bottom: 0.3rem;
         margin-right: 0.75rem;
         span {
           font-size: 0.625rem;
