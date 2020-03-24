@@ -1,0 +1,101 @@
+.header-container {
+  padding: 0.65rem 2.75rem;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
+  height: 60px;
+  .logo {
+    font-family: 'Roboto', sans-serif;
+    color: #1875F0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    display: block;
+    margin: auto 0;
+  }
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    &-search {
+      width: 70%;
+      img {
+        width: 12px;
+        height: 11px;
+        margin-right: 0.75rem;
+        position: relative;
+        bottom: 1px;
+      }
+      input {
+        width: 94%;
+        border: none;
+        background: none;
+        font-size: 0.75rem;
+        transition: all 0.125s;
+        border-bottom: 0.5px solid #eaeaea;
+      }
+    }
+    &-links {
+      .link {
+        font-size: 0.875rem;
+        color: #647787;
+        margin-right: 2.5rem;
+        font-weight: 300;
+        text-decoration: none;
+      }
+    }
+    .notification {
+      position: relative;
+      margin-right: 2rem;
+      img {
+        width: 18px;
+        height: 20px;
+        position: relative;
+        bottom: 3px;
+      }
+      span {
+        font-size: 0.625rem;
+        text-align: center;
+        color: #fff;
+        background-color: #1860EC;
+        border-radius: 50%;
+        width: 14px;
+        height: 15px;
+        display: block;
+        position: absolute;
+        top: 0.05rem;
+        left: 0.575rem;
+      }
+    }
+    .user {
+      display: flex;
+      justify-content: flex-start;
+      color: #647787;
+      font-weight: 300;
+      .hello-user {
+        text-align: right;
+        position: relative;
+        bottom: 0.4rem;
+        margin-right: 0.75rem;
+        span {
+          font-size: 0.625rem;
+        }
+        .username {
+          font-size: 0.75rem;
+          margin-bottom: 0;
+          position: relative;
+          bottom: 0.25rem;
+          color: #647787;
+          display: block;
+        }
+      }
+      .user-img {
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
