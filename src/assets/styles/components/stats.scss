@@ -124,8 +124,8 @@
       }
     }
     .breakdown {
-      width: 34%;
-      margin-left: 0.4rem;
+      width: 34.3%;
+      margin-left: 0.25rem;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -166,6 +166,173 @@
             &.yellow { color: rgba($yellow, 0.87)}
             &.green { color: $green;}
             &.blue { color: $blue;}
+          }
+        }
+      }
+    }
+  }
+  .payments {
+    margin-top: 2.5rem;
+    font-weight: 300;
+    .title {
+      color: $darker;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .filter-format {
+      display: flex;
+      align-items: center;
+      .filter-number {
+        margin-right: 3rem;
+        span {
+          color: $darker;
+          font-size: 0.8rem;
+        }
+        select {
+          color: $blue;
+          font-size: 0.875rem;
+          border: none;
+          background: none;
+          margin: 0 1rem;
+        }
+      }
+      .search {
+        width: 40%;
+        margin-right: 10%;
+        img {
+          width: 14px;
+          height: 13px;
+          position: relative;
+          left: 1rem;
+        }
+        input {
+          width: 97%;
+          background: none;
+          border: none;
+          padding-left: 1.5rem;
+          border-bottom: 1px solid $gray2;
+          font-size: 0.75rem;
+          height: 32px;
+          color: $dark;
+        }
+      }
+      .filter-type {
+        span {
+          color: $darker;
+          font-size: 0.8rem;
+        }
+        select {
+          margin: 0 1rem;
+          width: 150px;
+          border: 1px solid #CED0DA;
+          height: 1.75rem;
+          color: $darker;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .payments-list {
+      margin-right: 4.125rem;
+      margin-top: 1.5rem;
+      .list-table {
+        width: 100%;
+        thead {
+          background-color: #EAEEF0;
+          color: $gray2;
+          tr {
+            width: 100%;
+            th {
+              font-weight: 300;
+              font-size: 0.935rem;
+              padding: 0.625rem 1.5rem 0.625rem 1.5rem;
+            }
+          }
+        }
+        tbody {
+          tr {
+            background-color: #ffffff;
+            border-bottom: 1px solid #CCCFD4;
+            td {
+              font-size: 0.875rem;
+              font-weight: 600;
+              color: #414042;
+              padding: 1.25rem;
+              &.type {
+                display: flex;
+                align-items: center;
+                img {
+                  width: 36px;
+                  height: 36px;
+                  margin-right: 1.5rem;
+                }
+                span, img {
+                  display: block;
+                }
+              }
+              &.action {
+                .status {
+                  border: none;
+                  background: none;
+                  border:  1px solid #CCCFD4;
+                  border-radius: 1.5rem;
+                  margin-right: 1.75rem;
+                  font-size: 0.75rem;
+                  height: 32px;
+                  width: 105px;
+                  display: inline-flex;
+                  &.reconciled {color: $green;}
+                  &.pending {color: $yellow;}
+                  &.unreconciled {color: $gray2;}
+                  span {
+                    width: 9px;
+                    height: 9px;
+                    border-radius: 50%;
+                    margin-right: 0.5rem;
+                    display: block;
+                    &.tile {
+                      position: relative;
+                      bottom: 0.275rem;
+                      text-transform: capitalize;
+                    }
+                    &.reconciled {background-color: $green;}
+                    &.pending {background-color: $yellow;}
+                    &.unreconciled {background-color: $gray2;}
+                  }
+                }
+                img {
+                  width: 15px;
+                  height: 11px;
+                  &:hover {
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 4.45rem;
+      margin-top: 1.25rem;
+      font-size: 0.8125rem;
+      .stat {
+        color: #000000;
+      }
+      .navs {
+        display: flex;
+        button {
+          color: #000000;
+          background: #ffffff;
+          border: 1px solid #CED0DA;
+          border-radius: 0.125rem;
+          height: 31px;
+          padding: 0 0.75rem;
+          &:hover, &.active {
+            background: $blue;
+            color: #FFFFFF;
           }
         }
       }
