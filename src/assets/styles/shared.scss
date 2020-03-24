@@ -37,8 +37,12 @@ input, button, select {
 		display: flex;
 		justify-content: flex-start;
 		.side {
-			width: 15%;
-			max-width: 260px;
+			width: 18%;
+			max-width: 300px;
+		}
+		.main-content {
+			width: 100%;
+			min-height: 100vh;
 		}
 	}
 }

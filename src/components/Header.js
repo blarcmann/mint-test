@@ -4,7 +4,7 @@ import '../assets/styles/components/header.scss';
 
 export default function Header() {
     return (
-        <div className="header-container">
+        <div className="header-component">
             <div className="row">
                 <div className="col-lg-2">
                     <div className="logo">TransMonitor</div>

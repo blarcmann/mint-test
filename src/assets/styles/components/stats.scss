@@ -1,0 +1,52 @@
+.stats-component {
+  $dark: #787C90;
+  $darker: #262626;
+  $gray: #EEF8FD;
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+  .transactions {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    .trans {
+      display: flex;
+      width: 47%;
+      margin-right: 3%;
+      flex-wrap: wrap;
+      .transaction {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        background: #FFFFFF;
+        font-weight: 300;
+        border: 1px solid $gray;
+        border-radius: 0.125rem;
+        padding: 1.125rem 1.25rem;
+        min-width: 255px;
+        margin-right: 1.125rem;
+        .description {
+          margin-right: 0.935rem;
+          .tag {
+            color: $dark;
+            font-size: 0.75rem;
+            line-height: 1rem;
+            text-transform: capitalize;
+          }
+          .value {
+            color: $darker;
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+          }
+        }
+        .chart {
+          img {
+            width: 71px;
+            height: 42px;
+            position: relative;
+            top: 0.25rem;
+          }
+        }
+      }
+    }
+  }
+}

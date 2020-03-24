@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
+import Stats from '../components/Stats';
 
 export class Dashboard extends Component {
   render() {
@@ -12,7 +13,9 @@ export class Dashboard extends Component {
           <div className="side">
             <Sidebar />
           </div>
-          <div className="main-content"></div>
+          <div className="main-content">
+            <Stats />
+          </div>
         </div>
       </div>
     )

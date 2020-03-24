@@ -1,4 +1,4 @@
-.sidebar-container {
+.sidebar-component {
   $dark: #647787;
   $blue: #1875F0;
   $green: #27AE60;
@@ -35,7 +35,7 @@
       padding: 0.5rem 0;
       padding-left: 1.875rem;
       transition: all 0.22s;
-      &:hover {
+      &:hover, &.active {
         background-color: rgba($blue, 0.1);
         cursor: pointer;
         border-left: 0.25rem solid $blue;

@@ -4,12 +4,12 @@ import '../assets/styles/components/sidebar.scss';
 
 export default function Sidebar() {
   return (
-    <div className="sidebar-container">
+    <div className="sidebar-component">
       <button className="generate">generate invoice</button>
       <div className="nav-section">
         <div className="section-title">Main</div>
         <div className="section-items">
-          <div className="nav-item">
+          <div className="nav-item active">
             <img src={require('../assets/images/overview.png')} alt="*" />
             <Link to="/">Overview</Link>
           </div>
