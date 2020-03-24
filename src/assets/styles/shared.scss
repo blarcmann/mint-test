@@ -7,8 +7,6 @@ $dark: #647787;
 $darker: #414042;
 $gray: #979797;
 
-
-
 body {
     font-family: 'Segoi UI';
     color: #6C6B6B;
@@ -17,7 +15,7 @@ body {
 
 #root {
     max-width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 //-------------------   utils  start  -------------------
@@ -42,7 +40,7 @@ input, button, select {
 		}
 		.main-content {
 			width: 100%;
-			min-height: 100vh;
+			// min-height: 100vh;
 		}
 	}
 }

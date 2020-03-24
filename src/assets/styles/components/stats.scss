@@ -2,6 +2,10 @@
   $dark: #787C90;
   $darker: #262626;
   $gray: #EEF8FD;
+  $gray2: #7F8FA4;
+  $yellow: #FDC203;
+  $green: #27AE60;
+  $blue: #1860EC;
   padding-left: 1.5rem;
   padding-top: 2rem;
   .transactions {
@@ -44,6 +48,124 @@
             height: 42px;
             position: relative;
             top: 0.25rem;
+          }
+        }
+      }
+    }
+  }
+  .main-chart {
+    height: 330px;
+    margin-top: 1.75rem;
+    display: flex;
+    .chart {
+      height: 100%;
+      border-radius: 2px;
+      border: 1px solid #EEF8FD;
+      width: 60%;
+      background: #FFFFFF;
+      position: relative;
+      .header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.4rem;
+        margin-bottom: 2.25rem;
+        padding: 0 1.75rem;
+        .title {
+          font-size: 1.125rem;
+          font-weight: 600;
+          color: $darker;
+        }
+        .filter {
+          display: flex;
+          select {
+            border: 1px solid #DDE0E3;
+            border-radius: 0.25rem;
+            width: 135px;
+            height: 25px;
+            color: $gray2;
+            font-size: 0.75rem;
+            background: #FFFFFF;
+            margin-right: 2.75rem;
+          }
+          .fw-bk {
+            button {
+              width: 30px;
+              height: 25px;
+              border-radius: 0.25rem;
+              background: linear-gradient(0deg, #F2F4F7 0%, #FFFFFF 100%);
+              border: 1px solid #CED0DA;
+              &:last-child{
+                margin-left: 0.75rem;
+              }
+              img {
+                width: 13px;
+                height: 11px;
+                position: relative;
+                bottom: 4px;
+              }
+            }
+          }
+        }
+      }
+      .months {
+        display: flex;
+        justify-content: space-around;
+        .month {
+          color: #000000;
+          font-size: 0.875rem;
+        }
+      }
+      .cr {
+        position: absolute;
+        bottom: 0;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .breakdown {
+      width: 34%;
+      margin-left: 0.4rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .each {
+        display: block;
+        height: 49.5%;
+        padding: 1.25rem;
+        background: #FFFFFF;
+        .title {
+          color: $darker;
+          font-size: 0.875rem;
+          font-weight: 700;
+          margin-bottom: 0.625rem;
+        }
+        .range {
+          width: 300px;
+          height: 5px;
+          border-radius: 0.25rem;
+          background: $yellow;
+          margin-bottom: 0.625rem;
+          .data {
+            background: $green;
+            height: 5px;
+            border-radius: 0.25rem;
+          }
+        }
+        .stats {
+          display: flex;
+          margin-bottom: 0.6125rem;
+          font-size: 0.875rem;
+          .tag {
+            color: $darker;
+            margin-right: 0.25rem;
+          }
+          .value {
+            font-weight: 800;
+            &.yellow { color: rgba($yellow, 0.87)}
+            &.green { color: $green;}
+            &.blue { color: $blue;}
           }
         }
       }
